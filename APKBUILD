@@ -244,7 +244,6 @@ build() {
 		--prefix=/usr \
 		--disable-librtmp \
 		--disable-lzma \
-		--disable-static \
 		--disable-stripping \
 		--enable-avfilter \
 		--enable-gpl \
@@ -288,6 +287,7 @@ build() {
 		--enable-pic \
 		--enable-pthreads \
 		--disable-shared \
+		--enable-static \
 		--enable-vaapi \
 		--enable-vdpau \
 		--enable-version3 \

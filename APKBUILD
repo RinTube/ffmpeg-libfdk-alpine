@@ -9,7 +9,6 @@
 maintainer="LIZARD-OFFICIAL-77 <lizard.official.77@gmail.com>"
 pkgname=ffmpeg-fdk-aac
 pkgver=8.0
-builddir="libfdk-aac-${pkgver}"
 pkgrel=3
 pkgdesc="Complete and free Internet live audio and video broadcasting solution for Linux/Unix"
 url="https://ffmpeg.org/"
@@ -357,6 +356,11 @@ libswresample() {
 	pkgdesc="$pkgdesc (libswresample library)"
 
 	amove usr/lib/libswresample.so.*
+}
+
+prepare() {
+  default_prepare
+  # custom patches or fixes
 }
 
 libswscale() {

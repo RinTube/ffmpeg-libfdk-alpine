@@ -288,7 +288,7 @@ build() {
 		--enable-version3 \
 		--enable-vulkan \
 		--enable-nonfree \
-		--enable-libfdk_aac \
+		--enable-libfdk-aac \
 		--optflags="-O3" \
 		$asm \
 		$_svt_av1 \

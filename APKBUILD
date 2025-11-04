@@ -1,15 +1,9 @@
-# shellcheck disable=SC2148
-# shellcheck disable=SC2086
-# shellcheck disable=SC2034
-# shellcheck disable=SC2154
-
 # Contributor: Sergei Lukin <sergej.lukin@gmail.com>
 # Contributor: Łukasz Jendrysik <scadu@yandex.com>
 # Contributor: Jakub Skrzypnik <j.skrzypnik@openmailbox.org>
-maintainer="LIZARD-OFFICIAL-77 <lizard.official.77@gmail.com>"
-pkgname=ffmpeg-fdk-aac
+maintainer="Achill Gilgenast <achill@achill.org>"
+pkgname=ffmpeg
 pkgver=8.0
-builddir="libfdk-aac-${pkgver}"
 pkgrel=3
 pkgdesc="Complete and free Internet live audio and video broadcasting solution for Linux/Unix"
 url="https://ffmpeg.org/"
@@ -243,14 +237,13 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--enable-nonfree \
 		--disable-librtmp \
 		--disable-lzma \
 		--disable-static \
 		--disable-stripping \
 		--enable-avfilter \
 		--enable-gpl \
-		--enable-nonfree \
-		--enable-libfdk_aac \
 		--enable-ladspa \
 		--enable-libaom \
 		--enable-libass \
@@ -357,12 +350,6 @@ libswresample() {
 	pkgdesc="$pkgdesc (libswresample library)"
 
 	amove usr/lib/libswresample.so.*
-}
-
-prepare() {
-  default_prepare
-  echo "DEBUG: srcdir contents: $(ls "$srcdir")"
-  echo "DEBUG: builddir = '$builddir'"
 }
 
 libswscale() {

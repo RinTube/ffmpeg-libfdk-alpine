@@ -360,7 +360,8 @@ libswresample() {
 
 prepare() {
   default_prepare
-  # custom patches or fixes
+  echo "DEBUG: srcdir contents: $(ls "$srcdir")"
+  echo "DEBUG: builddir = '$builddir'"
 }
 
 libswscale() {

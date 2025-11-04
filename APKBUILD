@@ -231,6 +231,11 @@ x86_64)
 esac
 
 build() {
+	# right before build()
+	echo "DEBUG: srcdir=$srcdir"
+	echo "DEBUG: builddir=$builddir"
+	ls "$srcdir"
+
 	case "$CARCH" in
 	x86) local asm="--disable-asm" ;;
 	esac

@@ -2,7 +2,7 @@
 # Contributor: Łukasz Jendrysik <scadu@yandex.com>
 # Contributor: Jakub Skrzypnik <j.skrzypnik@openmailbox.org>
 maintainer="Achill Gilgenast <achill@achill.org>"
-pkgname=ffmpeg-libfdk
+pkgname=ffmpeg
 pkgver=8.0
 pkgrel=3
 pkgdesc="Complete and free Internet live audio and video broadcasting solution for Linux/Unix"

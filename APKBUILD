@@ -6,6 +6,7 @@
 # Contributor: Sergei Lukin <sergej.lukin@gmail.com>
 # Contributor: Łukasz Jendrysik <scadu@yandex.com>
 # Contributor: Jakub Skrzypnik <j.skrzypnik@openmailbox.org>
+builddir="libfdk-aac-${pkgver}"
 maintainer="LIZARD-OFFICIAL-77 <lizard.official.77@gmail.com>"
 pkgname=ffmpeg-fdk-aac
 pkgver=8.0

@@ -287,7 +287,7 @@ build() {
 		--enable-openssl \
 		--enable-pic \
 		--enable-pthreads \
-		--enable-shared \
+		--disable-shared \
 		--enable-vaapi \
 		--enable-vdpau \
 		--enable-version3 \

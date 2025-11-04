@@ -15,6 +15,7 @@ url="https://ffmpeg.org/"
 arch="all"
 license="GPL-2.0-or-later AND LGPL-2.1-or-later"
 makedepends="
+	fdk-aac-dev
 	alsa-lib-dev
 	aom-dev
 	bzip2-dev
@@ -62,7 +63,6 @@ makedepends="
 	zeromq-dev
 	zimg-dev
 	zlib-dev
-	fdk-aac-dev
 	"
 checkdepends="rsync"
 subpackages="

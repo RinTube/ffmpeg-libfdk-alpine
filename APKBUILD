@@ -237,7 +237,6 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-nonfree \
 		--disable-librtmp \
 		--disable-lzma \
 		--disable-static \
@@ -288,6 +287,8 @@ build() {
 		--enable-vdpau \
 		--enable-version3 \
 		--enable-vulkan \
+		--enable-nonfree \
+		--enable-libfdk_aac \
 		--optflags="-O3" \
 		$asm \
 		$_svt_av1 \
